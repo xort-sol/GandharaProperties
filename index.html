@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gandhara Properties - Premium Real Estate Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="150by150.png" alt="Gandhara Properties Logo" class="logo-img">
+                <!-- <h2>Gandhara Properties</h2> -->
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#amenities" class="nav-link">Amenities</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Gandhara Properties</h1>
+            <h2 class="hero-subtitle">Premium Real Estate Solutions</h2>
+            <p class="hero-description">World-class amenities, unmatched facilities, and premium lifestyle.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                <button type="button" class="btn btn-secondary" onclick="openAppointmentModal()">Book Appointment</button>
+            </div>
+        </div>
+        <div class="hero-highlights">
+            <div class="highlight-item">
+                <i class="fas fa-mosque"></i>
+                <span>Mosques</span>
+            </div>
+            <div class="highlight-item">
+                <i class="fas fa-tree"></i>
+                <span>Parks</span>
+            </div>
+            <div class="highlight-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Schools</span>
+            </div>
+            <div class="highlight-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>Security</span>
+            </div>
+            <div class="highlight-item">
+                <i class="fas fa-store"></i>
+                <span>Commercial</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Gandhara Properties</h2>
+                <p class="section-subtitle">Excellence in Every Detail</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Vision</h3>
+                    <p>To create Pakistan's most prestigious residential community, setting new standards for luxury living and sustainable development.</p>
+                    
+                    <h3>Our Mission</h3>
+                    <p>Delivering world-class infrastructure, premium amenities, and an unparalleled lifestyle experience through strategic partnerships and innovative design.</p>
+                    
+                    <h3>Our Commitment</h3>
+                    <p>Providing our residents with a secure, sophisticated, and sustainable environment that enhances quality of life and preserves natural beauty.</p>
+                </div>
+                <div class="about-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-content">
+                            <h4>Project Launch</h4>
+                            <p>DHA Gandhara officially launched with master planning by Surbana Jurong</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2021</div>
+                        <div class="timeline-content">
+                            <h4>Infrastructure Development</h4>
+                            <p>Major infrastructure work began with HRL as development partner</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-content">
+                            <h4>Phase 1 Completion</h4>
+                            <p>First residential phase completed with full amenities</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-content">
+                            <h4>Community Excellence</h4>
+                            <p>Recognized as Pakistan's premier gated community</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Projects</h2>
+                <p class="section-subtitle">Luxury Redefined</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Residential Villas</h3>
+                        <p>Exclusive luxury villas with private gardens and premium finishes</p>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Premium Apartments</h3>
+                        <p>High-rise living with panoramic mountain views and modern amenities</p>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Commercial Plaza</h3>
+                        <p>State-of-the-art commercial spaces in prime locations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">World-Class Amenities</h2>
+                <p class="section-subtitle">Everything You Need, Within Reach</p>
+            </div>
+            <div class="amenities-grid">
+                <div class="amenity-item" data-aos="fade-right">
+                    <div class="amenity-icon">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Mosques</h3>
+                        <p>Beautiful mosques designed with traditional Islamic architecture</p>
+                    </div>
+                </div>
+                <div class="amenity-item" data-aos="fade-left">
+                    <div class="amenity-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Wide Boulevards</h3>
+                        <p>Spacious tree-lined streets with elegant landscaping</p>
+                    </div>
+                </div>
+                <div class="amenity-item" data-aos="fade-right">
+                    <div class="amenity-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Eco-Friendly Environment</h3>
+                        <p>Sustainable development with green building practices</p>
+                    </div>
+                </div>
+                <div class="amenity-item" data-aos="fade-left">
+                    <div class="amenity-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Commercial Zones</h3>
+                        <p>Premium retail and business districts for convenience</p>
+                    </div>
+                </div>
+                <div class="amenity-item" data-aos="fade-right">
+                    <div class="amenity-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Health Clubs & Fitness</h3>
+                        <p>State-of-the-art fitness facilities and wellness centers</p>
+                    </div>
+                </div>
+                <div class="amenity-item" data-aos="fade-left">
+                    <div class="amenity-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Parks & Greenbelts</h3>
+                        <p>Expansive green spaces and recreational areas</p>
+                    </div>
+                </div>
+                <div class="amenity-item" data-aos="fade-right">
+                    <div class="amenity-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Educational Institutes</h3>
+                        <p>Top-tier schools and educational facilities</p>
+                    </div>
+                </div>
+                <div class="amenity-item" data-aos="fade-left">
+                    <div class="amenity-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Hospitals</h3>
+                        <p>Modern healthcare facilities with expert medical care</p>
+                    </div>
+                </div>
+                <div class="amenity-item" data-aos="fade-right">
+                    <div class="amenity-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Shopping Malls</h3>
+                        <p>Premium shopping destinations with international brands</p>
+                    </div>
+                </div>
+                <div class="amenity-item" data-aos="fade-left">
+                    <div class="amenity-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="amenity-content">
+                        <h3>24/7 Security</h3>
+                        <p>Advanced security systems and professional guards</p>
+                    </div>
+                </div>
+                <div class="amenity-item" data-aos="fade-right">
+                    <div class="amenity-icon">
+                        <i class="fas fa-football-ball"></i>
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Sports Grounds</h3>
+                        <p>Professional sports facilities and recreational courts</p>
+                    </div>
+                </div>
+                <div class="amenity-item" data-aos="fade-left">
+                    <div class="amenity-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="amenity-content">
+                        <h3>24/7 Utilities</h3>
+                        <p>Uninterrupted electricity, gas, and water supply</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Expert Team</h2>
+                <p class="section-subtitle">Professionals Dedicated to Excellence</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member" data-aos="fade-up">
+                    <div class="member-image">
+                        <div class="member-overlay">
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Chaudhary Farrukh Raza</h3>
+                        <p class="member-title">Group Chairman</p>
+                        <p class="member-description">Visionary leader driving excellence in real estate</p>
+                    </div>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-image">
+                        <div class="member-overlay">
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Chaudhary Urwa Abbas</h3>
+                        <p class="member-title">CEO</p>
+                        <p class="member-description">Strategic leadership in premium property development</p>
+                    </div>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member-image">
+                        <div class="member-overlay">
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Malik Faisal</h3>
+                        <p class="member-title">Head of Sales</p>
+                        <p class="member-description">Expert in premium property consultancy and client relations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Start Your Journey to Elite Living</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="booking-process">
+                    <h3>Booking Process</h3>
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Initial Consultation</h4>
+                                <p>Schedule a meeting with our experts</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Site Visit</h4>
+                                <p>Tour the property and explore amenities</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Documentation</h4>
+                                <p>CNIC, Income proof, Bank statements</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Booking Confirmation</h4>
+                                <p>Complete payment and secure your unit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary" onclick="openAppointmentModal()">Book Appointment</button>
+                </div>
+            </div>
+            <div class="location-section">
+                <div class="location-info">
+                    <h3>Our Location</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Gandhara Properties Office</p>
+                    <a href="https://share.google/DA87OjPqnyewXgKYX" target="_blank" class="btn btn-outline location-btn">
+                        <i class="fas fa-external-link-alt"></i> View on Google Maps
+                    </a>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.4547!2d72.0!3d33.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDAwJzAwLjAiTiA3MsKwMDAnMDAuMCJF!5e0!3m2!1sen!2s!4v1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Booking Modal -->
+    <div id="appointmentModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Book Your Appointment</h2>
+                <span class="close" onclick="closeAppointmentModal()">&times;</span>
+            </div>
+            <form class="appointment-form" id="appointmentForm">
+                <div class="form-group">
+                    <input type="text" id="appointment-name" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="appointment-phone" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="appointment-email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="date" id="appointment-date" name="date" placeholder="Preferred Date" required>
+                </div>
+                <div class="form-group">
+                    <select id="appointment-time" name="time" required>
+                        <option value="">Select Preferred Time</option>
+                        <option value="09:00">9:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                        <option value="17:00">5:00 PM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select id="appointment-service" name="service" required>
+                        <option value="">Select Service</option>
+                        <option value="Property Consultation">Property Consultation</option>
+                        <option value="Site Visit">Site Visit</option>
+                        <option value="Investment Guidance">Investment Guidance</option>
+                        <option value="Documentation Support">Documentation Support</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="appointment-message" name="message" placeholder="Additional Requirements (Optional)" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Gandhara Properties</h3>
+                    <p>Premium real estate solutions with exceptional service and unmatched expertise.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/share/1AwP1NiEcf/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Property Sales</a></li>
+                        <li><a href="#">Investment Consultation</a></li>
+                        <li><a href="#">Property Management</a></li>
+                        <li><a href="#">After Sales Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> 03307770000 (UAN)</p>
+                        <p><i class="fas fa-envelope"></i> Info@gandharaproperties</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <a href="https://share.google/DA87OjPqnyewXgKYX" target="_blank" style="color: var(--primary-color); text-decoration: none;">View Location</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gandhara Properties. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://api.whatsapp.com/send?phone=923455079934" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
