@@ -15,15 +15,15 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Navbar scroll effect
-window.addEventListener('scroll', () => {
-    const navbar = document.getElementById('navbar');
-    if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-    } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-    }
-});
+// Navbar scroll effect - disabled to keep consistent white background
+// window.addEventListener('scroll', () => {
+//     const navbar = document.getElementById('navbar');
+//     if (window.scrollY > 50) {
+//         navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+//     } else {
+//         navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+//     }
+// });
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

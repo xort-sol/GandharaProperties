@@ -6,28 +6,30 @@
 }
 
 :root {
-    --primary-color: hsl(42, 49%, 58%); /* Gold/Bronze */
-    --secondary-color: #2C2C2C; /* Charcoal Gray */
-    --accent-color: #F5F5F5; /* Soft Neutral */
-    --white: #FFFFFF;
+    --primary-color: #22284c; /* Deep Navy Blue */
+    --secondary-color: #656f7b; /* Medium Gray Blue */
+    --accent-color: #c9cace; /* Light Gray */
+    --white: #ffffff; /* Pure White */
     --black: #000000;
-    --text-dark: #333333;
-    --text-light: #666666;
-    --text-muted: #999999;
-    --border-light: #E5E5E5;
-    --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.15);
+    --text-dark: #22284c;
+    --text-light: #656f7b;
+    --text-muted: #c9cace;
+    --border-light: #c9cace;
+    --shadow: 0 4px 20px rgba(34, 40, 76, 0.1);
+    --shadow-hover: 0 8px 30px rgba(34, 40, 76, 0.15);
     --transition: all 0.3s ease;
     --border-radius: 8px;
     --max-width: 1200px;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', 'Inter', sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--white);
     overflow-x: hidden;
+    font-weight: 400;
+    letter-spacing: -0.01em;
 }
 
 .container {
@@ -38,15 +40,17 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', 'Poppins', sans-serif;
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 1rem;
+    letter-spacing: -0.02em;
 }
 
 h1 {
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: 800;
+    letter-spacing: -0.03em;
 }
 
 h2 {
@@ -73,12 +77,14 @@ p {
     border: none;
     border-radius: var(--border-radius);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
     transition: var(--transition);
     text-align: center;
     min-width: 150px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.01em;
 }
 
 .btn-primary {
@@ -87,7 +93,7 @@ p {
 }
 
 .btn-primary:hover {
-    background-color: #B8985A;
+    background-color: #1a1f3a;
     transform: translateY(-2px);
     box-shadow: var(--shadow-hover);
 }
@@ -152,6 +158,9 @@ p {
     color: var(--primary-color);
     margin-bottom: 0;
     font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 .nav-menu {
@@ -166,6 +175,8 @@ p {
     font-weight: 500;
     transition: var(--transition);
     position: relative;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.01em;
 }
 
 .nav-link:hover {
@@ -179,7 +190,7 @@ p {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     transition: var(--transition);
 }
 
@@ -222,7 +233,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(44, 44, 44, 0.8) 0%, rgba(201, 169, 97, 0.3) 100%);
+    background: linear-gradient(135deg, rgba(34, 40, 76, 0.8) 0%, rgba(101, 111, 123, 0.3) 100%);
 }
 
 .hero-content {
@@ -235,9 +246,11 @@ p {
 
 .hero-title {
     font-size: 4rem;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 0.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.04em;
 }
 
 .hero-subtitle {
@@ -245,6 +258,9 @@ p {
     color: var(--primary-color);
     margin-bottom: 1rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.02em;
 }
 
 .hero-description {
@@ -316,8 +332,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    align-
-    ems: start;
+    align-items: start;
 }
 
 .about-text h3 {
