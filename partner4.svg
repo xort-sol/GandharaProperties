@@ -1,0 +1,12 @@
+<svg width="150" height="80" viewBox="0 0 150 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c2d12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <polygon points="75,10 95,30 95,50 55,50 55,30" fill="url(#grad4)"/>
+  <rect x="60" y="50" width="30" height="20" fill="url(#grad4)"/>
+  <text x="75" y="45" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">HOME</text>
+  <text x="75" y="65" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#fed7aa">LTD</text>
+</svg>
