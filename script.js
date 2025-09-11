@@ -444,6 +444,108 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Image Slider Functionality
+let currentSlide = 0;
+let slideInterval;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+// Initialize slider
+function initSlider() {
+    createDots();
+    updateSlider();
+    startAutoSlide();
+}
+
+// Create dots for navigation
+function createDots() {
+    const dotsContainer = document.getElementById('sliderDots');
+    dotsContainer.innerHTML = '';
+    
+    for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if (i === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsContainer.appendChild(dot);
+    }
+}
+
+// Update slider position
+function updateSlider() {
+    const track = document.getElementById('sliderTrack');
+    const translateX = -currentSlide * 100;
+    track.style.transform = `translateX(${translateX}%)`;
+    
+    // Update dots
+    document.querySelectorAll('.dot').forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide);
+    });
+}
+
+// Go to specific slide
+function goToSlide(slideIndex) {
+    currentSlide = slideIndex;
+    updateSlider();
+    resetAutoSlide();
+}
+
+// Next slide
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateSlider();
+}
+
+// Previous slide
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateSlider();
+}
+
+// Start auto slide
+function startAutoSlide() {
+    slideInterval = setInterval(nextSlide, 4000); // Change slide every 4 seconds
+}
+
+// Stop auto slide
+function stopAutoSlide() {
+    clearInterval(slideInterval);
+}
+
+// Reset auto slide
+function resetAutoSlide() {
+    stopAutoSlide();
+    startAutoSlide();
+}
+
+// Event listeners for slider controls
+document.addEventListener('DOMContentLoaded', function() {
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            resetAutoSlide();
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            resetAutoSlide();
+        });
+    }
+    
+    // Pause auto slide on hover
+    const sliderContainer = document.querySelector('.slider-container');
+    if (sliderContainer) {
+        sliderContainer.addEventListener('mouseenter', stopAutoSlide);
+        sliderContainer.addEventListener('mouseleave', startAutoSlide);
+    }
+    
+    // Initialize slider
+    initSlider();
+});
+
 // Console welcome message
 console.log('%c🏠 Welcome to Gandhara Properties Website! 🏠', 'color: #C9A961; font-size: 16px; font-weight: bold;');
 console.log('%cPremium Real Estate Solutions', 'color: #2C2C2C; font-size: 14px;');
