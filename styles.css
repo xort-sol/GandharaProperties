@@ -940,7 +940,7 @@ p {
 
 /* Footer */
 .footer {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--white);
     padding: 60px 0 20px;
 }
@@ -954,7 +954,7 @@ p {
 
 .footer-section h3,
 .footer-section h4 {
-    color: var(--primary-color);
+    color: var(--white);
     margin-bottom: 1rem;
 }
 
@@ -977,7 +977,7 @@ p {
 }
 
 .footer-section ul li a:hover {
-    color: var(--primary-color);
+    color: var(--white);
 }
 
 .footer-social {
@@ -989,19 +989,19 @@ p {
 .footer-social a {
     width: 40px;
     height: 40px;
-    background-color: var(--primary-color);
+    background-color: var(--white);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--white);
+    color: var(--primary-color);
     text-decoration: none;
     transition: var(--transition);
 }
 
 .footer-social a:hover {
-    background-color: var(--white);
-    color: var(--primary-color);
+    background-color: var(--accent-color);
+    color: var(--white);
 }
 
 .contact-info p {
@@ -1013,15 +1013,15 @@ p {
 }
 
 .contact-info i {
-    color: var(--primary-color);
+    color: var(--white);
     width: 20px;
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid #444;
-    color: var(--text-muted);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--accent-color);
 }
 
 /* WhatsApp Float Button */
